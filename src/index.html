@@ -2,14 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Let's Party</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <header>
+        <h1 class="logo">Let's<br>Party</h1>
+      </header>
     </div>
-    <div id="planodefundo"></div>
-    <script src="index.js" type="module"></script>
+    <div id="descricao">
+      <section>
+        <p>Aqui você pode criar convites cifrados para seus eventos.</p>
+        <ol>
+          <li>Escreva sua mensagem no box</li>
+          <li>Coloque o número no Offset</li>
+          <li>Clique em cifrar se estiver criando um convite ou em decifrar <br> se for descobrir o que está escrito em seu convite. <br>A mensagem aparecerá no box ao lado.</li>
+        </ol>
+      </section>
+    </div>
+    <div>
+      <form action="index.html">
+        <label for="box">Convite a criar</label>
+        <textarea name="" id="box" cols="30" rows="10"></textarea>
+        <label for="offset">Número Offset</label>
+        <input id="offset" type="number" min="0" max="999">
+        <button id="buttonCifra">Cifrar</button>
+        <button id="buttonDecifra">Decifrar</button>
+        <label for="box2">Convite Final</label>
+        <textarea name="" id="box2" cols="30" rows="10"></textarea>
+      </form>
+    </div>
+  <script src="index.js" type="module"></script>
   </body>
 </html>
