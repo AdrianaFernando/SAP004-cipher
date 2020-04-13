@@ -12,25 +12,33 @@
       </header>
     </div>
     <div id="descricao">
-      <section>
-        <p>Aqui você pode criar convites cifrados para seus eventos.</p>
-        <ol>
-          <li>Escreva sua mensagem no box</li>
-          <li>Coloque o número no Offset</li>
-          <li>Clique em cifrar se estiver criando um convite ou em decifrar <br> se for descobrir o que está escrito em seu convite. <br>A mensagem aparecerá no box ao lado.</li>
-        </ol>
+      <section class="texto">
+        <p>O espaço para criar convites cifrados!</p>
+        <dl>
+          <dt>Como criar seu convite:</dt>
+          <dd>Escreva seu convite no quadro "Criar convite".</dd>
+          <dd>Coloque um número de deslocamento no espaço Offset.</dd>
+          <dd>Clique em Cifrar e seu convite aparecerá cifrado no quadro "Convite final".</dd>
+          <dd>Caso tenha recebido um convite, para decifrar coloque o texto no quadro "Criar convite",<br/>coloque o número que recebeu no espaço Offset e clique em Decifrar.</dd>
+        </dl>
       </section>
     </div>
-    <div>
+    <div class="mensagem"> 
       <form action="index.html">
-        <label for="box">Convite a criar</label>
-        <textarea name="" id="box" cols="30" rows="10"></textarea>
-        <label for="offset">Número Offset</label>
-        <input id="offset" type="number" min="0" max="999">
-        <button id="buttonCifra">Cifrar</button>
-        <button id="buttonDecifra">Decifrar</button>
-        <label for="box2">Convite Final</label>
+        <section class="convite1">
+          <label for="box">Criar convite:</label>
+          <textarea name="" id="box" cols="30" rows="10"></textarea>
+        </section>
+        <section class="convite2">
+          <label for="box2">Convite Final:</label>
         <textarea name="" id="box2" cols="30" rows="10"></textarea>
+        </section>
+        <section class="numero">
+          <label for="offset">Número Offset</label>
+          <input id="offset" type="number" min="0" max="999">
+          <button id="buttonCifra">Cifrar</button>
+          <button id="buttonDecifra">Decifrar</button>
+        </section>
       </form>
     </div>
   <script src="index.js" type="module"></script>
