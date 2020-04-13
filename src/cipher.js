@@ -5,7 +5,7 @@ const cipher = {
     }
     let resultado = "";
     for (let letra = 0; letra< textBox.length; letra++) {
-      let num = textBox.charCodeAt(letra); //funcao que transforma letra em numero da tabela asc
+      let num = textBox.charCodeAt(letra); //posição da letra para a posição em ascii
       let codigo = (num - 65);
       let deslocamento = (((codigo + offset)%26)+ 65); 
       resultado += String.fromCharCode(deslocamento);
